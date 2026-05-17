@@ -7,7 +7,7 @@ def dev_id():
 def is_dev(chat_id):
 	if chat_id == "":
 		return False
-	if chat_id == dev_id():
+	if int(chat_id) == int(dev_id()):
 		return True
 	else:
 		return False
